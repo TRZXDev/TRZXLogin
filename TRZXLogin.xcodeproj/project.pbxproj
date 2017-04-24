@@ -48,6 +48,19 @@
 		B737B4E41EA5BFD10021C73D /* TRZXShareRZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B737B4BD1EA5BFD10021C73D /* TRZXShareRZTableViewCell.xib */; };
 		B737B4E71EA5BFE80021C73D /* CTMediator+TRZXLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B737B4E61EA5BFE80021C73D /* CTMediator+TRZXLogin.m */; };
 		B737B4EA1EA5C0760021C73D /* Target_TRZXLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B737B4E91EA5C0760021C73D /* Target_TRZXLogin.m */; };
+		B737F87C1EA700F9000CFE42 /* TRZXRZBasicInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F87B1EA700F9000CFE42 /* TRZXRZBasicInformationVC.m */; };
+		B737F8801EA701EB000CFE42 /* TRZXRZBasicInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F87E1EA701EB000CFE42 /* TRZXRZBasicInformationCell.m */; };
+		B737F8811EA701EB000CFE42 /* TRZXRZBasicInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B737F87F1EA701EB000CFE42 /* TRZXRZBasicInformationCell.xib */; };
+		B737F8841EA7099F000CFE42 /* TRZXRZIformationMode.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F8831EA7099F000CFE42 /* TRZXRZIformationMode.m */; };
+		B737F8871EA8B56D000CFE42 /* TRZXExpertsSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F8861EA8B56D000CFE42 /* TRZXExpertsSecondViewController.m */; };
+		B737F88A1EA9AB84000CFE42 /* TRZXRZPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F8891EA9AB84000CFE42 /* TRZXRZPositionViewController.m */; };
+		B737F88D1EA9AEFD000CFE42 /* TRZXPositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F88C1EA9AEFD000CFE42 /* TRZXPositionModel.m */; };
+		B737F8911EA9F6BD000CFE42 /* TRZXCertificationImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F88F1EA9F6BD000CFE42 /* TRZXCertificationImageCell.m */; };
+		B737F8921EA9F6BD000CFE42 /* TRZXCertificationImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B737F8901EA9F6BD000CFE42 /* TRZXCertificationImageCell.xib */; };
+		B737F8961EADE5CA000CFE42 /* TRZXCerticationChooseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F8941EADE5CA000CFE42 /* TRZXCerticationChooseCell.m */; };
+		B737F8971EADE5CA000CFE42 /* TRZXCerticationChooseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B737F8951EADE5CA000CFE42 /* TRZXCerticationChooseCell.xib */; };
+		B737F89A1EADE855000CFE42 /* TRZXCerticationImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B737F8991EADE855000CFE42 /* TRZXCerticationImageViewController.m */; };
+		B737F89C1EADEEEF000CFE42 /* AlbumAddBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B737F89B1EADEEEF000CFE42 /* AlbumAddBtn@2x.png */; };
 		B74287C91E9B6529007FBB8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B74287C81E9B6529007FBB8A /* main.m */; };
 		B74287CC1E9B6529007FBB8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B74287CB1E9B6529007FBB8A /* AppDelegate.m */; };
 		B74287D21E9B6529007FBB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74287D01E9B6529007FBB8A /* Main.storyboard */; };
@@ -135,6 +148,28 @@
 		B737B4E61EA5BFE80021C73D /* CTMediator+TRZXLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TRZXLogin.m"; sourceTree = "<group>"; };
 		B737B4E81EA5C0760021C73D /* Target_TRZXLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXLogin.h; sourceTree = "<group>"; };
 		B737B4E91EA5C0760021C73D /* Target_TRZXLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXLogin.m; sourceTree = "<group>"; };
+		B737F87A1EA700F9000CFE42 /* TRZXRZBasicInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXRZBasicInformationVC.h; sourceTree = "<group>"; };
+		B737F87B1EA700F9000CFE42 /* TRZXRZBasicInformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXRZBasicInformationVC.m; sourceTree = "<group>"; };
+		B737F87D1EA701EB000CFE42 /* TRZXRZBasicInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXRZBasicInformationCell.h; sourceTree = "<group>"; };
+		B737F87E1EA701EB000CFE42 /* TRZXRZBasicInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXRZBasicInformationCell.m; sourceTree = "<group>"; };
+		B737F87F1EA701EB000CFE42 /* TRZXRZBasicInformationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXRZBasicInformationCell.xib; sourceTree = "<group>"; };
+		B737F8821EA7099F000CFE42 /* TRZXRZIformationMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXRZIformationMode.h; sourceTree = "<group>"; };
+		B737F8831EA7099F000CFE42 /* TRZXRZIformationMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXRZIformationMode.m; sourceTree = "<group>"; };
+		B737F8851EA8B56D000CFE42 /* TRZXExpertsSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXExpertsSecondViewController.h; sourceTree = "<group>"; };
+		B737F8861EA8B56D000CFE42 /* TRZXExpertsSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXExpertsSecondViewController.m; sourceTree = "<group>"; };
+		B737F8881EA9AB84000CFE42 /* TRZXRZPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXRZPositionViewController.h; sourceTree = "<group>"; };
+		B737F8891EA9AB84000CFE42 /* TRZXRZPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXRZPositionViewController.m; sourceTree = "<group>"; };
+		B737F88B1EA9AEFD000CFE42 /* TRZXPositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXPositionModel.h; sourceTree = "<group>"; };
+		B737F88C1EA9AEFD000CFE42 /* TRZXPositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXPositionModel.m; sourceTree = "<group>"; };
+		B737F88E1EA9F6BD000CFE42 /* TRZXCertificationImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCertificationImageCell.h; sourceTree = "<group>"; };
+		B737F88F1EA9F6BD000CFE42 /* TRZXCertificationImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCertificationImageCell.m; sourceTree = "<group>"; };
+		B737F8901EA9F6BD000CFE42 /* TRZXCertificationImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXCertificationImageCell.xib; sourceTree = "<group>"; };
+		B737F8931EADE5CA000CFE42 /* TRZXCerticationChooseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCerticationChooseCell.h; sourceTree = "<group>"; };
+		B737F8941EADE5CA000CFE42 /* TRZXCerticationChooseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCerticationChooseCell.m; sourceTree = "<group>"; };
+		B737F8951EADE5CA000CFE42 /* TRZXCerticationChooseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRZXCerticationChooseCell.xib; sourceTree = "<group>"; };
+		B737F8981EADE855000CFE42 /* TRZXCerticationImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCerticationImageViewController.h; sourceTree = "<group>"; };
+		B737F8991EADE855000CFE42 /* TRZXCerticationImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCerticationImageViewController.m; sourceTree = "<group>"; };
+		B737F89B1EADEEEF000CFE42 /* AlbumAddBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumAddBtn@2x.png"; sourceTree = "<group>"; };
 		B74287C41E9B6529007FBB8A /* TRZXLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74287C81E9B6529007FBB8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B74287CA1E9B6529007FBB8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +262,14 @@
 				B737B4E91EA5C0760021C73D /* Target_TRZXLogin.m */,
 				B737B4E51EA5BFE80021C73D /* CTMediator+TRZXLogin.h */,
 				B737B4E61EA5BFE80021C73D /* CTMediator+TRZXLogin.m */,
+				B737F87A1EA700F9000CFE42 /* TRZXRZBasicInformationVC.h */,
+				B737F87B1EA700F9000CFE42 /* TRZXRZBasicInformationVC.m */,
+				B737F8851EA8B56D000CFE42 /* TRZXExpertsSecondViewController.h */,
+				B737F8861EA8B56D000CFE42 /* TRZXExpertsSecondViewController.m */,
+				B737F8881EA9AB84000CFE42 /* TRZXRZPositionViewController.h */,
+				B737F8891EA9AB84000CFE42 /* TRZXRZPositionViewController.m */,
+				B737F8981EADE855000CFE42 /* TRZXCerticationImageViewController.h */,
+				B737F8991EADE855000CFE42 /* TRZXCerticationImageViewController.m */,
 			);
 			path = CertificationController;
 			sourceTree = "<group>";
@@ -260,6 +303,10 @@
 				B737B4991EA5BFD10021C73D /* TRZXLoginLogic.m */,
 				B737B49A1EA5BFD10021C73D /* TRZXLoginUserDefaults.h */,
 				B737B49B1EA5BFD10021C73D /* TRZXLoginUserDefaults.m */,
+				B737F8821EA7099F000CFE42 /* TRZXRZIformationMode.h */,
+				B737F8831EA7099F000CFE42 /* TRZXRZIformationMode.m */,
+				B737F88B1EA9AEFD000CFE42 /* TRZXPositionModel.h */,
+				B737F88C1EA9AEFD000CFE42 /* TRZXPositionModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -267,6 +314,7 @@
 		B737B49C1EA5BFD10021C73D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B737F89B1EADEEEF000CFE42 /* AlbumAddBtn@2x.png */,
 				B737B49D1EA5BFD10021C73D /* bianjiG.png */,
 				B737B49E1EA5BFD10021C73D /* fail-icon@3x.png */,
 				B737B49F1EA5BFD10021C73D /* login_001.png */,
@@ -314,6 +362,15 @@
 				B737B4BB1EA5BFD10021C73D /* TRZXShareRZTableViewCell.h */,
 				B737B4BC1EA5BFD10021C73D /* TRZXShareRZTableViewCell.m */,
 				B737B4BD1EA5BFD10021C73D /* TRZXShareRZTableViewCell.xib */,
+				B737F87D1EA701EB000CFE42 /* TRZXRZBasicInformationCell.h */,
+				B737F87E1EA701EB000CFE42 /* TRZXRZBasicInformationCell.m */,
+				B737F87F1EA701EB000CFE42 /* TRZXRZBasicInformationCell.xib */,
+				B737F88E1EA9F6BD000CFE42 /* TRZXCertificationImageCell.h */,
+				B737F88F1EA9F6BD000CFE42 /* TRZXCertificationImageCell.m */,
+				B737F8901EA9F6BD000CFE42 /* TRZXCertificationImageCell.xib */,
+				B737F8931EADE5CA000CFE42 /* TRZXCerticationChooseCell.h */,
+				B737F8941EADE5CA000CFE42 /* TRZXCerticationChooseCell.m */,
+				B737F8951EADE5CA000CFE42 /* TRZXCerticationChooseCell.xib */,
 			);
 			path = CertificationView;
 			sourceTree = "<group>";
@@ -509,13 +566,17 @@
 				B737B4DE1EA5BFD10021C73D /* TRZXCertificationTopCell.xib in Resources */,
 				B737B4DA1EA5BFD10021C73D /* TRZXCertificationHomeCell.xib in Resources */,
 				B737B4CF1EA5BFD10021C73D /* login_001.png in Resources */,
+				B737F8971EADE5CA000CFE42 /* TRZXCerticationChooseCell.xib in Resources */,
 				B737B4D41EA5BFD10021C73D /* 图1.png in Resources */,
+				B737F8921EA9F6BD000CFE42 /* TRZXCertificationImageCell.xib in Resources */,
 				B737B4C81EA5BFD10021C73D /* TRZXRetrievePasswordViewController.xib in Resources */,
+				B737F89C1EADEEEF000CFE42 /* AlbumAddBtn@2x.png in Resources */,
 				B737B4E21EA5BFD10021C73D /* TRZXPushLabelCell.xib in Resources */,
 				B737B4D21EA5BFD10021C73D /* tab3@2x.png in Resources */,
 				B737B4C21EA5BFD10021C73D /* TRZXFirstLoginViewController.xib in Resources */,
 				B74287D21E9B6529007FBB8A /* Main.storyboard in Resources */,
 				B737B4CE1EA5BFD10021C73D /* fail-icon@3x.png in Resources */,
+				B737F8811EA701EB000CFE42 /* TRZXRZBasicInformationCell.xib in Resources */,
 				B737B4D51EA5BFD10021C73D /* 延展@2x.png in Resources */,
 				B737B4CD1EA5BFD10021C73D /* bianjiG.png in Resources */,
 				B737B4D11EA5BFD10021C73D /* RZ_001.png in Resources */,
@@ -598,6 +659,7 @@
 				B737B4CB1EA5BFD10021C73D /* TRZXLoginLogic.m in Sources */,
 				B737B4C91EA5BFD10021C73D /* TRZXSetPasswordViewController.m in Sources */,
 				B74287CC1E9B6529007FBB8A /* AppDelegate.m in Sources */,
+				B737F88A1EA9AB84000CFE42 /* TRZXRZPositionViewController.m in Sources */,
 				B737B4C51EA5BFD10021C73D /* TRZXRegisteredViewController.m in Sources */,
 				B737B4E71EA5BFE80021C73D /* CTMediator+TRZXLogin.m in Sources */,
 				B737B4DD1EA5BFD10021C73D /* TRZXCertificationTopCell.m in Sources */,
@@ -606,14 +668,22 @@
 				B737B4DF1EA5BFD10021C73D /* TRZXCertTitleCell.m in Sources */,
 				B737B4D91EA5BFD10021C73D /* TRZXCertificationHomeCell.m in Sources */,
 				B74287C91E9B6529007FBB8A /* main.m in Sources */,
+				B737F8911EA9F6BD000CFE42 /* TRZXCertificationImageCell.m in Sources */,
+				B737F89A1EADE855000CFE42 /* TRZXCerticationImageViewController.m in Sources */,
 				B737B4CC1EA5BFD10021C73D /* TRZXLoginUserDefaults.m in Sources */,
+				B737F87C1EA700F9000CFE42 /* TRZXRZBasicInformationVC.m in Sources */,
 				B737B4C31EA5BFD10021C73D /* TRZXLoginViewController.m in Sources */,
+				B737F88D1EA9AEFD000CFE42 /* TRZXPositionModel.m in Sources */,
+				B737F8801EA701EB000CFE42 /* TRZXRZBasicInformationCell.m in Sources */,
 				B737B4DB1EA5BFD10021C73D /* TRZXCertificationInformationCell.m in Sources */,
+				B737F8961EADE5CA000CFE42 /* TRZXCerticationChooseCell.m in Sources */,
 				B737B4C01EA5BFD10021C73D /* TRZXExpertsCertViewController.m in Sources */,
 				B737B4BF1EA5BFD10021C73D /* TRZXCertificationViewController.m in Sources */,
 				B737B4E31EA5BFD10021C73D /* TRZXShareRZTableViewCell.m in Sources */,
 				B737B4C11EA5BFD10021C73D /* TRZXFirstLoginViewController.m in Sources */,
 				B737B4C71EA5BFD10021C73D /* TRZXRetrievePasswordViewController.m in Sources */,
+				B737F8871EA8B56D000CFE42 /* TRZXExpertsSecondViewController.m in Sources */,
+				B737F8841EA7099F000CFE42 /* TRZXRZIformationMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,39 +1,42 @@
 //
-//  TRZXExpertsCertViewController.m
+//  TRZXExpertsSecondViewController.m
 //  TRZXLogin
 //
-//  Created by 张江威 on 2017/4/14.
+//  Created by 张江威 on 2017/4/20.
 //  Copyright © 2017年 张江威. All rights reserved.
 //
 
-#import "TRZXExpertsCertViewController.h"
-#import "TRZXCertificationHeadImageCell.h"
-#import "TRZXCertificationInformationCell.h"
-#import "TRZXPushLabelCell.h"
-#import "TRZXShareRZTableViewCell.h"
-#import "TRZXRZIformationMode.h"
-#import "TRZXRZBasicInformationVC.h"
 #import "TRZXExpertsSecondViewController.h"
 
+#import "TRZXCertTitleCell.h"
+#import "TRZXCertificationInformationCell.h"
+#import "TRZXPushLabelCell.h"
+
+#import "TRZXRZIformationMode.h"
+#import "TRZXRZBasicInformationVC.h"
+#import "TRZXCerticationImageViewController.h"
 #import "TRZXLoginLogic.h"
 
-@interface TRZXExpertsCertViewController ()<UITableViewDelegate,UITableViewDataSource,informationDelegate>
+
+@interface TRZXExpertsSecondViewController ()<UITableViewDelegate,UITableViewDataSource,informationDelegate>
 
 @property (strong, nonatomic) UITableView * tableView;
 @property (nonatomic, strong) NSIndexPath *index;
 @property (strong, nonatomic) TRZXRZIformationMode * mode;
 @property (strong, nonatomic) NSArray * titleArr;
 
+
 @end
 
-@implementation TRZXExpertsCertViewController
+@implementation TRZXExpertsSecondViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = _titleStr;
     [self.view addSubview:self.tableView];
     _mode = [[TRZXRZIformationMode alloc]init];
-    _titleArr = @[@"",@"姓名",@"性别",@"身份证",@"",@""];
+    _titleArr = @[@"",@"职业",@"职位",@"服务行业",@"公司名称",@"公司所在地",@""];
 }
 
 
@@ -42,10 +45,6 @@
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        
-        _tableView.rowHeight = UITableViewAutomaticDimension;
-        _tableView.estimatedRowHeight = 100;
-        
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
@@ -56,26 +55,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 4&&![_titleStr isEqualToString:@"股东认证"]) {
-        return 0;
-    }else{
-        return 1;
-    }
+    return 1;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 6;
+    return 7;
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        return 90;
-    } else if (indexPath.section == 4) {
-        return 70;
-    } else if (indexPath.section == 5) {
-        if ([_titleStr isEqualToString:@"股东认证"]) {
-            return 60;
-        }else{
-            return 80;
-        }
+        return 10;
+    } else if (indexPath.section == 6) {
+        return 80;
     } else {
         return 50;
     }
@@ -84,22 +73,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        TRZXCertificationHeadImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXCertificationHeadImageCell"];
+        TRZXCertTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXCertTitleCell"];
         if (!cell) {
-            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TRZXCertificationHeadImageCell" owner:self options:nil] lastObject];
+            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TRZXCertTitleCell" owner:self options:nil] lastObject];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = backColor;
         return cell;
-    } else if (indexPath.section == 4) {
-        TRZXShareRZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXShareRZTableViewCell"];
-        if (!cell) {
-            cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TRZXShareRZTableViewCell" owner:self options:nil] lastObject];
-        }
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.backgroundColor = backColor;
-        return cell;
-    }  else if (indexPath.section == 5) {
+    } else if (indexPath.section == 6) {
         TRZXPushLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TRZXPushLabelCell"];
         if (!cell) {
             cell = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"TRZXPushLabelCell" owner:self options:nil] lastObject];
@@ -126,7 +107,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     _index = indexPath;
     //跳转
-    if (indexPath.section == 1||indexPath.section == 2||indexPath.section == 3) {
+    if (!(indexPath.section == 0||indexPath.section == 6)) {
         TRZXRZBasicInformationVC *viewController = [[TRZXRZBasicInformationVC alloc] init];
         viewController.titleStr = cell.titleLabel.text;
         if ([cell.titleLabel.text isEqualToString:@"姓名"]) {
@@ -138,9 +119,33 @@
         }
         viewController.delegate = self;
         [self.navigationController pushViewController: viewController animated:true];
-    }else if (indexPath.section == 5){
+    }else if (!(indexPath.section == 0||indexPath.section == 6)) {
+        TRZXRZBasicInformationVC *viewController = [[TRZXRZBasicInformationVC alloc] init];
+        viewController.titleStr = cell.titleLabel.text;
+        if ([cell.titleLabel.text isEqualToString:@"姓名"]) {
+            viewController.textFieldStr = _mode.name;
+        } else if ([cell.titleLabel.text  isEqualToString:@"性别"]) {
+            viewController.textFieldStr = _mode.sex;
+        } else if ([cell.titleLabel.text  isEqualToString:@"身份证"]) {
+            viewController.textFieldStr = _mode.idCard;
+        }
+        viewController.delegate = self;
+        [self.navigationController pushViewController: viewController animated:true];
+    }else if (!(indexPath.section == 0||indexPath.section == 6)) {
+        TRZXRZBasicInformationVC *viewController = [[TRZXRZBasicInformationVC alloc] init];
+        viewController.titleStr = cell.titleLabel.text;
+        if ([cell.titleLabel.text isEqualToString:@"姓名"]) {
+            viewController.textFieldStr = _mode.name;
+        } else if ([cell.titleLabel.text  isEqualToString:@"性别"]) {
+            viewController.textFieldStr = _mode.sex;
+        } else if ([cell.titleLabel.text  isEqualToString:@"身份证"]) {
+            viewController.textFieldStr = _mode.idCard;
+        }
+        viewController.delegate = self;
+        [self.navigationController pushViewController: viewController animated:true];
+    }else if (indexPath.section == 6){
         //下一步
-        TRZXExpertsSecondViewController *viewController = [[TRZXExpertsSecondViewController alloc] init];
+        TRZXCerticationImageViewController *viewController = [[TRZXCerticationImageViewController alloc] init];
         viewController.titleStr = _titleStr;
         [self.navigationController pushViewController: viewController animated:true];
     }
@@ -172,4 +177,5 @@
  */
 
 @end
+
 

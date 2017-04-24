@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TRZXRZIformationMode.h"
 
 @interface TRZXCertificationInformationCell : UITableViewCell
 
@@ -14,5 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *yzImage;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lineLabel;
+
+@property (nonatomic, strong) TRZXRZIformationMode *mode;
+@property (nonatomic, strong) NSArray * titleArr;
+
 
 @end

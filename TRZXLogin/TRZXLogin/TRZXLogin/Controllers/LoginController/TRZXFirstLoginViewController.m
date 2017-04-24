@@ -80,6 +80,9 @@
 
 //登录
 - (IBAction)loginBtn:(UIButton *)sender {
+    TRZXCertificationViewController *viewController = [[TRZXCertificationViewController alloc] init];
+    [self.navigationController pushViewController: viewController animated:true];
+    return;
     if ([_accountText.text isEqualToString:@""]) {
         _str1 = nil;
         _str2 = @"请输入账号";

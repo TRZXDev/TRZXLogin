@@ -29,6 +29,10 @@
 #define passwordTwoNB  201741105//新密码2
 #define emailNB        201741106//邮箱
 
+#define nameNB         201741901//姓名
+#define sexNB          201741902//性别
+#define idCardNB       201741903//身份证号
+
 //定义宏（限制输入内容）
 #define kAlphaNum  @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 

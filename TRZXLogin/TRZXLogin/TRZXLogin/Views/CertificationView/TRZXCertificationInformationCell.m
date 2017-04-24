@@ -13,6 +13,20 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+
+}
+
+-(void)setMode:(TRZXRZIformationMode *)mode{
+    if (_mode!=mode) {
+        _mode = mode;
+        if ([self.titleLabel.text isEqualToString:@"姓名"]) {
+            self.zhanshiLabel.text = mode.name;
+        } else if ([self.titleLabel.text  isEqualToString:@"性别"]) {
+            self.zhanshiLabel.text = mode.sex;
+        } else if ([self.titleLabel.text  isEqualToString:@"身份证"]) {
+            self.zhanshiLabel.text = mode.idCard;
+        }
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
